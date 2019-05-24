@@ -1,8 +1,10 @@
 package com.msg.devtalks.controllers;
 
 import com.msg.devtalks.service.BusinessPartnerService;
+import com.sap.cloud.sdk.cloudplatform.logging.CloudLoggerFactory;
 import com.sap.cloud.sdk.odatav2.connectivity.ODataException;
 import com.sap.cloud.sdk.s4hana.datamodel.odata.namespaces.businesspartner.BusinessPartner;
+import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,6 +16,7 @@ import java.util.List;
 @RestController
 public class BusinessPartnerController {
 
+    private static final Logger logger = CloudLoggerFactory.getLogger(BusinessPartnerController.class);
     @Autowired
     private BusinessPartnerService businessPartnerService;
 
@@ -24,7 +27,7 @@ public class BusinessPartnerController {
             return ResponseEntity.ok(businessPartnerService.getBusinessPartner(bpName));
 
         } catch (ODataException e) {
-            e.printStackTrace();
+            logger.error("exception thrown:", e);
             return ResponseEntity.badRequest().build();
         }
     }
@@ -36,7 +39,7 @@ public class BusinessPartnerController {
             return ResponseEntity.ok(businessPartnerService.getAllBusinessPartners());
 
         } catch (ODataException e) {
-            e.printStackTrace();
+            logger.error("exception thrown:", e);
             return ResponseEntity.badRequest().build();
         }
     }
