@@ -37,12 +37,11 @@ stages:
 #  s4SdkQualityChecks:
 #    nonErpDestinations:
 #      - 'myCustomDestination'
-
-#  productionDeployment:
-#    cfTargets:
-#      - org: 'myOrg'
-#        space: 'mySpace'
-#        apiEndpoint: 'https://'
-#        appName: 'myAppName'
-#        manifest: 'manifest.yml'
-#        credentialsId: 'myDeploymentCredentialsId'
+  productionDeployment:
+    cfTargets:
+    - org: P1013866trial_trial
+      space: dev
+      apiEndpoint: https://api.cf.eu10.hana.ondemand.com
+      appName: s4-extension-demo
+      manifest: manifest.yml
+      credentialsId: DEPLOY-CF

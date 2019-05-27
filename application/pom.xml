@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
@@ -153,7 +153,7 @@
 
                             To learn more, visit: https://blogs.sap.com/2018/10/23/usage-analytics-s4sdk/
                             -->
-                            <salt />
+                            <salt>4c08c04f6f12452e58d1c87317cdf15f8e425a53a19fdb258d87f1ff2e869f51</salt>
                         </configuration>
                     </execution>
                 </executions>

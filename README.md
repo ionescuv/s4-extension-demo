@@ -1,7 +1,10 @@
 # s4-extension-demo
 
-This is a sample project generated using the [SAP Cloud SDK](https://blogs.sap.com/2017/05/10/first-steps-with-sap-s4hana-cloud-sdk/) maven archetype.
-Some steps required for getting things to run are described below
+This is a sample project generated using the [SAP Cloud SDK](https://blogs.sap.com/2017/05/10/first-steps-with-sap-s4hana-cloud-sdk/) maven archetype:
+```
+mvn archetype:generate -DarchetypeGroupId=com.sap.cloud.s4hana.archetypes -DarchetypeArtifactId=scp-cf-spring -DarchetypeVersion=RELEASE
+```
+Some steps required for getting things to run are described below:
 
 ## Configure Cloud Foundry Environment
 
