@@ -33,10 +33,10 @@ stages:
 #    credentials:
 #      - alias: 'mySystemAlias'
 #        credentialId: 'mySystemCredentialsId'
-
-#  s4SdkQualityChecks:
-#    nonErpDestinations:
-#      - 'myCustomDestination'
+  s4SdkQualityChecks:
+    jacocoExcludes:
+    - com/msg/devtalks/service/BusinessPartnerService.class
+    - com/msg/devtalks/controllers/BusinessPartnerController.class
   productionDeployment:
     cfTargets:
     - org: P1013866trial_trial
