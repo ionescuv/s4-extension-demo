@@ -8,7 +8,7 @@ Some steps required for getting things to run are described below:
 
 ## Configure Cloud Foundry Environment
 
-The application requires an instance of the xsUAA service to enable authentication & authorization.
+The application requires an instance of the xsUAA service to enable authentication & authorization. 
 Name the service `myxsuaa` and it will be bound automatically when pushed to Cloud Foundry, as configured in the `manifest.yml`
 
 ```
